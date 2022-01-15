@@ -79,6 +79,7 @@ button{
 .journey-details{
     display: flex;
     justify-content: center;
+    
 }
 .journey-text{
     width: 50%;
@@ -122,15 +123,14 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     padding: 30px;
+    transition: width 2s, height 2s, transform 2s;
 }
 .journey-img img{
     width: 440px;
     height: 414px;
-    transition: width 2s, height 2s, transform 2s;
 }
-.journey-img img:hover{
-    transform: scale(-0.75) rotate(180deg);
-    
+.journey-details:hover>.journey-img{
+    transform: scale(-0.75) rotate(180deg); 
 }
 
 /* logo styles  */
@@ -312,7 +312,7 @@ button{
          font-size: 35px;
      }
      .journey-img{
-         background-image: none;
+        background-size: 100%;
         padding: 30px;
      }
     .journey-img img{
@@ -349,7 +349,7 @@ button{
 
 /* tab responsive  */
 
-@media only screen and (min-width:670px) and (max-width:1002px) {
+@media only screen and (min-width:670px) and (max-width:1102px) {
     .container-area{
         width:100%;
     }
