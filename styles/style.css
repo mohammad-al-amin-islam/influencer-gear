@@ -274,3 +274,66 @@ button{
     padding: 9px 9px;
     
 }
+
+
+/* responsive area  */
+
+@media only screen and (max-width:700px) {
+    .container-area{
+        width:100%;
+    }
+    .menu-text{
+        width: 100%;
+        text-align: center;
+    }
+    .journey-area{
+        width: 100%;
+    }
+    .journey-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .journey-text{
+        display: flex;
+        font-size: 70px;
+        order: 2;
+        text-align: center;
+        align-items: center;
+     }
+     .journey-title{
+         font-size: 35px;
+     }
+     .journey-img{
+         background-image: none;
+        padding: 30px;
+     }
+    .journey-img img{
+        width: 100%; 
+        height: 100%;  
+    }
+    .logo-area{
+        width: 100%;
+    }
+    .logo{
+        margin-left: 25px;
+        padding: ;
+    }
+    .all-logos{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .all-collection{
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 40px;  
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    
+    .menu-options,.join-area{
+        display: none;
+    }
+    
+}
