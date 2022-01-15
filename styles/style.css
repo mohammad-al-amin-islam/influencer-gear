@@ -17,6 +17,10 @@ nav{
 a{
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
+
 /* header styles */
 .menu-area{
     display: flex;
@@ -119,4 +123,88 @@ a{
     border-top:1px solid rgb(224, 211, 211);
     border-bottom: 1px solid rgb(224, 211, 211);
     margin-bottom: 100px;
+}
+
+/* collection area styles */
+.collection-area{
+    width: 1100px;
+    margin: 0 auto;
+}
+.all-collection{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-bottom: 50px;
+}
+.collection{
+    width: 329px;
+    height: 476px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 17px 15px;
+    border-radius: 5px;
+}
+.collection-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    margin-bottom: 30px;
+    color:  #3A3A3A;
+}
+.collection h3{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+    margin-bottom: 8px;
+}
+
+.required-money{
+    font-size: 24px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 8px;
+
+}
+.ratings{
+    display: flex;
+}
+.rating-star{
+    display: flex;
+}
+.rating-star li{
+    width: 11.07px;
+    height: 10.32px;
+    margin-right:8px; 
+    font-size: 12px;
+    color: #FB8200;
+}
+.rating-average{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: #5E6366;
+    margin-left: 8px;
+}
+.collection-details{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 143%;
+    color: #787885;
+    letter-spacing: 0.018em;
+}
+.more-collection {
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+    line-height: 24px;
+    margin-bottom: 100px;
+
+}
+.more-collection a{
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: bold;
+    font-size: 16px;
 }
