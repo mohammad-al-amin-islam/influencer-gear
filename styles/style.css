@@ -46,7 +46,7 @@ button{
     justify-content: space-between;
     align-items: center;
     width: 1200px;
-    padding: 85px 0;
+    padding: 75px 0;
 }
 .menu-title{
     font-weight: bold;
@@ -278,9 +278,15 @@ button{
 
 /* responsive area  */
 
-@media only screen and (max-width:700px) {
+
+/* mobile responsive */
+
+@media only screen and (max-width:670px) {
     .container-area{
         width:100%;
+    }
+    .menu-options{
+        display: none;
     }
     .menu-text{
         width: 100%;
@@ -318,22 +324,75 @@ button{
     }
     .logo{
         margin-left: 25px;
-        padding: ;
     }
     .all-logos{
         justify-content: center;
         flex-wrap: wrap;
     }
     .all-collection{
-        display: grid;
-        grid-template-columns: 1fr; 
-        gap: 40px;  
-        margin-bottom: 50px;
-        align-items: center;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
     
-    .menu-options,.join-area{
+    .more-collection{
+        margin-right: 75px;
+    }
+    .join-area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-options{
         display: none;
+    }
+    
+}
+
+/* tab responsive  */
+
+@media only screen and (min-width:670px) and (max-width:1002px) {
+    .container-area{
+        width:100%;
+    }
+    
+    .menu-area{  
+        width: 100%; 
+        justify-content: center;
+    }
+    .menu-title {
+        margin-right: 50px;
+    }
+    .journey-area{
+        width: 100%;
+    }
+    .journey-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .journey-text{
+        display: flex;
+        font-size: 70px;
+        order: 2;
+        text-align: center;
+        align-items: center;
+     }
+     .journey-img img{
+        width: 100%; 
+        height: 100%;  
+    }
+    .logo-area{
+        width: 100%;
+    }
+    .logo{
+        margin-left: 25px;
+    }
+    .all-logos{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .all-collection{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
     }
     
 }
